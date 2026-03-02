@@ -5,91 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Welcome</title>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --bg: #fff;
-      --text: #1a1a1a;
-      --text-muted: #555;
-      --accent: #fe315d;
-      --accent2: #087cfa;
-      --nav-bg: #000000;
-      --nav-text: #ffffff;
-      --border: #e0e0e0;
-    }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      background: var(--bg);
-      color: var(--text);
-    }
-
-    nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 40px;
-    }
-
-    nav p{
-      color: #ffffff;
-      font-size: 18px;
-      font-weight: 600;
-    }
-
-    .nav-logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      width: 72px;
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 28px;
-      list-style: none;
-    }
-
-    .nav-links a {
-      color: var(--nav-text);
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    .main{
-      display: flex;
-      flex-direction: column;
-      height: 100vh;
-      background: linear-gradient(90deg, #000000 10%,#470716  ,#B50027);
-    }
-
-    .hero {
-      display: grid;
-      grid-template-columns: 1fr 420px;
-      align-items: center;
-      padding: 80px 40px 100px;
-      gap: 40px;
-    }
-
-    .hero-content h1 {
-      font-size: 48px;
-      font-weight: 800;
-      line-height: 1.1;
-      margin-bottom: 28px;
-      letter-spacing: -1px;
-      color: white;
-    }
-
-    .hero-content p {
-      font-size: 17px;
-      color: white;
-      line-height: 1.6;
-      margin-bottom: 14px;
-    }
-
-  </style>
+  <link rel="stylesheet" href="main.css" />
 </head>
 <body>
 
@@ -98,9 +14,9 @@
       <img src="logo2.png" class="nav-logo">
       <p>Al-Hurmain Engineers & Contractors</p>
       <ul class="nav-links">
-        <li><a href="#">Services</a></li>
+        <li><a href="#skill">Services</a></li>
         <li><a href="#">Team</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#foot">Contact</a></li>
       </ul>
     </nav>
 
@@ -115,17 +31,57 @@
     </section>
   </div>
 
-  <section class="services">
-    <div></div>
-    <div></div>
-    <div></div>
-  </section>
+  
+    <div class="skills-section" id="skill">
+        <div class="main2" style="margin-top:4rem;">
+            <h2 class="tertiary-2">SERVICES</h2>
+        </div>
 
-  <section class="contact">
-    <div></div>
-    <div></div>
-    <div></div>
-  </section>
+        <div class="skills-category">
+            <div class="skills">
+                <div class="hero-button-box">
+                    <a class="hero-button hero-button-1">AC Work</a>
+                    <a class="hero-button hero-button-1">Electric Meter Installation</a>
+                    <a class="hero-button hero-button-1">Electrical Work</a>
+                    <a class="hero-button hero-button-1">Plumbing Work</a>
+                    <a class="hero-button hero-button-1">Genset Work</a>
+                    <a class="hero-button hero-button-1">Transformer Installation</a>
+                    <a class="hero-button hero-button-1">FACP Installation</a>
+                    <a class="hero-button hero-button-1">CCTV Installation</a>
+                    <a class="hero-button hero-button-1">Solar Panel Work</a>
+                    <a class="hero-button hero-button-1">Fire Fighting Pumps Work</a>
+                  </div>
+            </div>
+        </div>
+    </div>
 
+<!---------------------------------------->
+<!------------ FOOTER SECTION ------------>
+<!---------------------------------------->
+<footer id="foot">
+    <div class="footer container grid grid--2-cols">
+        <div class="contact">
+            <p class="label">Contact</p>
+            <p class="number">
+                <ion-icon class="footer-icon" name="call-outline"></ion-icon>0335-9929070
+            </p>
+            <p class="email">
+                <ion-icon class="footer-icon" name="mail-outline"></ion-icon>alhurmain123@gmail.com
+            </p>
+        </div>
+
+        <form>
+            <p class="label">Download Visiting Card</p>
+            <img src="card.png" alt="Visiting Card" width="400px">
+            <button class="hero-button"><a href="visitinCard.pdf" download target="_blank">
+              Download
+            </a></button>
+        </form>
+    </div>
+</footer>
+<div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</div>
 </body>
 </html>
